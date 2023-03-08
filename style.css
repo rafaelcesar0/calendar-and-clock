@@ -8,6 +8,11 @@
     color: #fff;
 }
 
+html, body {
+  overflow: hidden;
+}
+
+
 body{
     background-image: linear-gradient(rgb(0, 26, 255), rgb(0, 183, 255), rgb(0, 255, 179));
     width: 100vw;
