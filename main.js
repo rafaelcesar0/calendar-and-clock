@@ -14,17 +14,6 @@ function zeroLeft(num) {
     return num >= 10 ? num : `0${num}`;
 }
 
-function createDate() {
-    const now = new Date();
-    const dayWeek = now.getDay();
-    const numMonth = now.getMonth();
-
-    const nameDay = getNameDayWeek(dayWeek);
-    const nameMonth = getNameMonth(numMonth);
-
-    return (`${nameDay}, ${nameMonth} ${now.getDate()}, ${now.getFullYear()} - ${zeroLeft(now.getHours())}:${zeroLeft(now.getMinutes())}:${zeroLeft(now.getSeconds())}`)
-}
-
 function nameDay() {
     const day = new Date();
     const dayWeek = day.getDay();
